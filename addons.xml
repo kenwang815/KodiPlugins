@@ -64,6 +64,22 @@
         </extension>
     </addon>
 
+    <addon id="script.module.youtube.dl" name="youtube-dl Control" version="16.521.0" provider-name="Rick Phillips (ruuk)">
+        <requires>
+            <import addon="xbmc.python" version="2.14.0"/>
+        </requires>
+        <extension library="addon.py" point="xbmc.python.script"/>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">View the Logfile of Kodi</summary>
+            <description lang="en">View the Logfile of Kodi</description>
+            <license>GNU General Public License, v2</license>
+            <language/>
+            <source>https://github.com/kenwang815/KodiPlugins/tree/master/script.module.youtube.dl</source>
+            <datadir zip="true">https://github.com/kenwang815/KodiPlugins/raw/master/releases</datadir>
+        </extension>
+    </addon>
+
     <addon id="script.module.addon.signals" name="addon.signals" provider-name="merlink" version="0.0.1">
         <requires>
             <import addon="xbmc.python" version="2.14.0"/>
