@@ -5,6 +5,7 @@ import xbmc
 import xbmcgui
 
 
+# test
 class PlayMonitor(xbmc.Player):
     def onPlayBackStarted(self):
         self.setVideoValidity()
