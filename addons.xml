@@ -48,7 +48,7 @@
         </extension>
     </addon>
 
-    <addon id="script.module.youtube.dl" name="Log Viewer" provider-name="merlink" version="0.0.1">
+    <addon id="script.module.youtube.dl" name="youtube.dl" provider-name="merlink" version="0.0.1">
         <requires>
             <import addon="xbmc.python" version="2.14.0"/>
         </requires>
@@ -64,7 +64,7 @@
         </extension>
     </addon>
 
-    <addon id="script.module.addon.signals" name="Log Viewer" provider-name="merlink" version="0.0.1">
+    <addon id="script.module.addon.signals" name="addon.signals" provider-name="merlink" version="0.0.1">
         <requires>
             <import addon="xbmc.python" version="2.14.0"/>
         </requires>
