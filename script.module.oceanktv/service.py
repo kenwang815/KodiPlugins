@@ -16,7 +16,7 @@ class Service(xbmc.Monitor):
         self.start()
 
     def onNotification(self, sender, method, data):
-        if not sender == 'script.module.youtube.dl':
+        if not sender == 'script.module.oceanktv':
             return
         self.processCommand(method.split('.', 1)[-1], self.controller.processCommandData(data))  # Remove the "Other." prefix
 

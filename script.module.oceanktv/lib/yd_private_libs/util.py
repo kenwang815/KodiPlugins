@@ -2,7 +2,7 @@
 import xbmc, xbmcgui, xbmcaddon
 import os, sys, traceback, binascii
 
-ADDON = xbmcaddon.Addon(id='script.module.youtube.dl')
+ADDON = xbmcaddon.Addon(id='script.module.oceanktv')
 T = ADDON.getLocalizedString
 
 TMP_PATH = os.path.join(xbmc.translatePath(ADDON.getAddonInfo('profile')).decode('utf-8'),'tmp')
@@ -15,7 +15,7 @@ DEBUG = ADDON.getSetting('debug') == 'true'
 
 def LOG(msg,debug=False):
     if debug and not DEBUG: return
-    xbmc.log('script.module.youtube.dl: {0}'.format(msg))
+    xbmc.log('script.module.oceanktv: {0}'.format(msg))
 
 def ERROR(msg=None,hide_tb=False):
     if msg: LOG('ERROR: {0}'.format(msg))
@@ -77,4 +77,3 @@ class xbmcDialogSelect:
         idx = xbmcgui.Dialog().select(self.heading,displays)
         if idx < 0: return None
         return IDs[idx]
-
