@@ -7,7 +7,7 @@ import json
 import util
 import jsonqueue
 
-BASE_COMMAND = 'XBMC.NotifyAll(script.module.oceanktv,{0},"{{{1}}}")'
+BASE_COMMAND = 'XBMC.NotifyAll(script.module.youtube.dl,{0},"{{{1}}}")'
 BASE_ARG = '\\"{0}\\":\\"{1}\\"'
 
 
@@ -71,8 +71,8 @@ class ServiceControl(object):
 
     @property
     def status(self):
-        return xbmc.getInfoLabel('Window(10000).Property(script.module.oceanktv_STATUS)')
+        return xbmc.getInfoLabel('Window(10000).Property(script.module.youtube.dl_STATUS)')
 
     @status.setter
     def status(self, value):
-        xbmcgui.Window(10000).setProperty('script.module.oceanktv_STATUS', value)
+        xbmcgui.Window(10000).setProperty('script.module.youtube.dl_STATUS', value)

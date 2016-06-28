@@ -19,7 +19,7 @@ class PlayMonitor(xbmc.Player):
             pass
 
         xbmcgui.Window(10000).setProperty(
-            'script.module.oceanktv_VALID', valid)
+            'script.module.youtube.dl_VALID', valid)
 
 
 def showOptions(main=None):
